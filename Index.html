@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paras Kulkarni - Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    :root {
+      --navy: #001f3f;
+      --navy-light: #2c3e50;
+      --white: #ffffff;
+      --black: #000000;
+      --text-dark: #1a1a1a;
+      --bg-texture: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23001f3f' fill-opacity='0.05'%3E%3Crect width='4' height='4'/%3E%3C/g%3E%3C/svg%3E");
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white) var(--bg-texture);
+      color: var(--text-dark);
+    }
+    header {
+      background: var(--navy) var(--bg-texture);
+      color: var(--white);
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid var(--white);
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.75rem;
+      margin-top: 1rem;
+    }
+    header p {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      opacity: 0.85;
+      font-weight: 300;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .profile {
+      flex: 1 1 300px;
+      background: var(--navy-light) var(--bg-texture);
+      color: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .profile h2 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 0.75rem;
+      font-size: 1.5rem;
+    }
+    .profile p.title {
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+    .profile ul { list-style: none; padding-left: 0; }
+    .profile ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    .profile ul li i {
+      width: 24px;
+      margin-right: 0.75rem;
+      color: var(--white);
+    }
+    .profile ul li a {
+      color: var(--white);
+      text-decoration: none;
+    }
+    .profile .spacer {
+      margin: 2rem 0;
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .content {
+      flex: 2 1 600px;
+      margin-left: 2rem;
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: var(--navy);
+      border-bottom: 2px solid var(--navy);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .section p, .section ul {
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+    .section ul {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    .contact-me {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .contact-me .info {
+      flex: 1 1 300px;
+      background: var(--white);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+    .contact-me .info h4 {
+      margin-bottom: 1rem;
+      color: var(--navy);
+    }
+    .contact-me .info ul { list-style: none; }
+    .contact-me .info ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+    .contact-me .info ul li i {
+      margin-right: 0.75rem;
+      color: var(--navy);
+    }
+
+    @media(max-width: 768px) {
+      .container { flex-direction: column; }
+      .content { margin-left: 0; margin-top: 2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Headshot.jpg" alt="Paras Kulkarni">
+    <h1>Paras Kulkarni</h1>
+    <p>BBA DBE Student @ IIM Bangalore</p>
+  </header>
+
+  <div class="container">
+    <aside class="profile">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><i class="fas fa-envelope"></i><a href="mailto:kulkarniparas42@gmail.com">kulkarniparas42@gmail.com</a></li>
+        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/paras-kulkarni-9a0745323">linkedin.com/in/paras-kulkarni</a></li>
+      </ul>
+
+      <div class="spacer"></div>
+
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <li>Sustainability Advocacy</li>
+        <li>Complex Problem Solving</li>
+        <li>Reading Geopolitics & Global Trade</li>
+        <li>Exploring Financial Markets & AI</li>
+        <li>Business Case Solving & Quizzing</li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <section class="section">
+        <h3>About Me</h3>
+        <p>A highly ambitious, grit-driven and resilient commerce student at IIM Bangalore's BBA DBE Program. I leverage data-driven insights, creative problem-solving and strong communication to drive impact and lead high-performing teams.</p>
+      </section>
+
+      <section class="section">
+        <h3>Education</h3>
+        <ul>
+          <li><strong>IIM Bangalore</strong>: BBA in Digital Business & Entrepreneurship (2024–Present)<br>Recognized for excellence in Marketing, Entrepreneurship & Finance.</li>
+          <li><strong>LHPEMS, Jalgaon</strong>: Class XII, Science Stream (2022–2024) — 70+% aggregate<br>Founder of the Sustainability Club.</li>
+          <li><strong>KPPS, Jalgaon</strong>: Class X (2020–2022) — 90+% aggregate<br>Served as House Leader organizing school-wide initiatives.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3>Key Achievements</h3>
+        <ul>
+          <li><strong>Pod Leader, IIM Bangalore:</strong> Mentored 35 peers and ranked among highest GPA scorers in first semester.</li>
+          <li><strong>Case Competition Finalist:</strong> Top-5 finishes at IIT Bombay (SJMSOM), IIT BHU, and IIM Indore in national case competitions.</li>
+          <li><strong>Global Olympiad Finalist:</strong> Qualified for regionals in Mathematics & Astrophysics Olympiads (2022–2023).</li>
+          <li><strong>Engineering Entrance Merit:</strong> Scored top percentile in India’s elite engineering entrance exams before shifting to business studies.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3>Experience</h3>
+        <ul>
+          <li><strong>Volunteer Educator</strong> — Govt-Recognized NGO (2024–Present): Delivered structured literacy curriculum to 30+ underprivileged students and tracked learning outcomes.</li>
+          <li><strong>Founder & President</strong> — Sustainability Club, LHPEMS (2022-2024): Led 50-member team for waste management and campus-wide recycling projects.</li>
+          <li><strong>House Leader</strong> — KPPS (2021-2022): Coordinated and led over 100 students across academic and cultural school events.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h3>Skills</h3>
+        <ul>
+          <li><strong>Leadership & Collaboration:</strong> Built and led multi-functional teams in academic and volunteer settings.</li>
+          <li><strong>Data Analytics:</strong> Experienced in Excel dashboards and Python pandas for decision support.</li>
+          <li><strong>Communication:</strong> Public speaker and mentor; conducted group workshops and presentations with clarity and conviction.</li>
+          <li><strong>Problem Solving:</strong> Regularly participate in business case challenges and Olympiad-level analytical reasoning tasks.</li>
+          <li><strong>Adaptability:</strong> Comfortable learning new tools and operating in high-pressure team environments.</li>
+        </ul>
+      </section>
+
+      <section class="section" id="contact-me">
+        <h3>Contact Me</h3>
+        <div class="contact-me">
+          <div class="info">
+            <h4>Reach Out</h4>
+            <ul>
+              <li><i class="fas fa-envelope"></i> kulkarniparas42@gmail.com</li>
+              <li><i class="fab fa-linkedin"></i> /paras-kulkarni</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
